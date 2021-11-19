@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #ffffff;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        
+      }
+
+      .swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 490px;
+        margin-top: 30px;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+    </style>
+  </head>
+<body>
+   <div class="container-fullwidth">
+    <nav class="navbar navbar-expand-lg navbar-dark navbg">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="font-size: 30px;" href="#"><img  src="maindoors/artinfinitylogo.png" alt=""><span>art infinity</span> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="navbar-brand" style="font-size: 30px;"  href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="navbar-brand" style="font-size: 30px;" href="Contactus.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   </div>
+
+   <div class="maindoor">
+     <p>Sculptures & Portraits</p>
+   </div>
+ 
+    <section class="images">
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="Sculptures/1-min.jpg" /></a>
+          </div>
+          <div class="details">
+            <h3></h3>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imgBx">
+              <img src="Sculptures/2-min.jpg" />
+            </div>
+            <div class="details">
+              <h3></h3>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="imgBx">
+                <img src="Sculptures/3-min.jpg" />
+              </div>
+              <div class="details">
+                <h3></h3>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="imgBx">
+                  <img src="Sculptures/4-min.jpg" />
+                </div>
+                <div class="details">
+                  <h3></h3>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="imgBx">
+                    <img src="Sculptures/5-min.jpg" />
+                  </div>
+                  <div class="details">
+                    <h3></h3>
+                  </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="imgBx">
+                      <img src="Sculptures/6-min.jpg" />
+                    </div>
+                    <div class="details">
+                      <h3></h3>
+                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="imgBx">
+                        <img src="Sculptures/7-min.jpg" />
+                      </div>
+                      <div class="details">
+                        <h3></h3>
+                      </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="imgBx">
+                          <img src="Sculptures/8-min.jpg" />
+                        </div>
+                        <div class="details">
+                          <h3></h3>
+                        </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="imgBx">
+                            <img src="Sculptures/9-min.jpg" />
+                          </div>
+                          <div class="details">
+                            <h3></h3>
+                          </div>
+                          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </section>
+
+       <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 500,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>Sculptures
